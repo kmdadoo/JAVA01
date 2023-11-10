@@ -44,7 +44,7 @@ public class E05For
 		System.out.println("1~100 까지의합:"+ sum);
 		
 		/*
-		 시나리오] for문을 이용하여 1~10까지의 정수증 2의 배수의 합을
+		 시나리오] for문을 이용하여 1~10까지의 정수중 2의 배수의 합을
 		 	구하는 프로그램을 작성하시오.
 		 */
 		/*
@@ -116,34 +116,28 @@ public class E05For
 		
 		/*
 		연습문제1] 구구단을 출력하는 프로그램을 for문으로 작성하시오.
-		 */		
-		System.out.println("행방향의 구구단 출력하기");
-		// 단에 해당하는 for문(2~9단까지 증가한다)
-		for(int dan=2 ; dan<=9 ; dan++) {
-			// 수에 해당하는 for문(1~9까지 중가한다)
-			for(int su=1 ; su<=9 ; su++) {
-				// 구구단 출력 후 스페이스 한칸
-				System.out.printf("%d*%d=%2d ", dan, su, dan*su);
-			}
-			// 하나의 단을 출력한 후 줄바꿈 처리
-			System.out.println();			
-		}
+		 */			
 		
+		System.out.println("행방향의 구구단 출력하기");
+		// 단에 해당하는 for문(2~9단까지 증가한다.
+		for(int dan = 2; dan<=9; dan++ ) {
+			for(int su = 1; su<=9; su++) {
+				System.out.printf("%-2d*%-2d=%2d ", dan, su, (dan*su));
+			}
+			System.out.println();	// 줄바꿈
+		}
+		System.out.println();
 		/*
 		연습문제1-2] 위 문제는 2단부터 9단까지 행으로 출력하는 형태이다.
 			이번에는 열로 출력하는 형태로 변경해 보세요.
 		 */	
-		System.out.println("열방향의 구구단 출력하기");
-		/*
-		수가 고정된 상태에서 단이 늘어나는 형태로 for문을 변경하면
-		된다.
-		 */
-		for(int su=1 ; su<=9 ; su++) {		
-			for(int dan=2 ; dan<=9 ; dan++) {
-				System.out.printf("%d*%d=%-2d ", dan, su, dan*su);
+		
+		for(int su = 1; su<=9; su++) {
+			for(int dan = 2; dan<=9; dan++ ) {
+				System.out.printf("%-2d*%-2d=%2d ", dan, su, (dan*su));
 			}
-			System.out.println();			
-		}		
+			System.out.println();	// 줄바꿈
+		}
 		
 		/*
 		연습문제2] 다음의 출력결과를 보이는 for문을 작성하시오.
@@ -154,6 +148,8 @@ public class E05For
 				1  0  0  0
 			해법 : x와 y를 더해서 5가 돨때 1을 출력한다. 
 		 */	
+		
+		
 		// x는 행에 해당한다.
 		for(int x=1 ; x<=4 ; x++) {
 			// y는 열에 해당한다.

@@ -2,7 +2,7 @@ package ex04controlstatement;
 
 /*
 break문	: 반복문이나 switch문에서 주로 사용되며 블럭내에서 탈출할때
-	사용한다. 만약 충첩된 반복문이라면 가장 가까운 블럭 하나만 탈출
+	사용한다. 만약 중첩된 반복문이라면 가장 가까운 블럭 하나만 탈출
 	한다.	
 continue문 : 반복문의 처음으로 돌아간다. while문의 경우	조건을 확인
 	하고, for문의 경우 증감식이 실행된다. 따라서 continue아래 문장은 
@@ -12,24 +12,26 @@ public class E06BreakContinue
 {
 	public static void main(String[] args)
 	{
-//		while(true) {
+//		while (true)
+//		{
 //			System.out.println("출력문1");
 //			System.out.println("출력문2");
 //			
 //			break;
 //			
-//			System.out.println("출력문3"); // 에러
+//			System.out.println("출력문3");	// 에러
 //			System.out.println("출력문4");
 //		}
 		
 //		int num = 10;
-//		while(true) {
+//		while (true)
+//		{
 //			System.out.println("출력문1");
 //			System.out.println("출력문2");
 //			
 //			if(num==10) continue;
 //			
-//			System.out.println("출력문3"); 
+//			System.out.println("출력문3");	
 //			System.out.println("출력문4");
 //		}
 		

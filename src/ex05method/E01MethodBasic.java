@@ -5,11 +5,11 @@ import java.util.Scanner;
 /*
 메서드(함수)의 규칙
 - Java에서 main메서드는 무조건 public static void로 선언하기로 약속되어
-	있다,
+	있다.
 - static으로 선언된 메서드는 static으로 선언된 메서드만 호출할 수 있다.
 - 메서드 호출 후 반환값은 호출한 위치로 반환된다. 이때 메서드는 메모리
 	에서 소멸된다.
-- 반환값이 없는 void형 메서드는 실행이 완료되면  호출한 위치로 실행의 
+- 반환값이 없는 void형 메서드는 실행이 완료되면 호출한 위치로 실행의 
 	흐름이 돌아온다.
 */
 public class E01MethodBasic
@@ -19,7 +19,8 @@ public class E01MethodBasic
 	 	=> 매개변수 2개의 정수를 전달받아 합의 결과를 반환한다. 반환값은
 	 	호출한 지점으로 반환한다.
 	 */
-	public static int simpleFunc(int a, int b) {
+	public static int simpleFunc(int a, int b) 
+	{
 		int sum = a + b;
 		return sum;
 	}
@@ -48,17 +49,15 @@ public class E01MethodBasic
 	}
 	
 	// main메서드는 Java에서 출발점(Entry point)의 역활을 한다.
-	public static void main(String[] args)
-	{
+	public static void main(String[] args) {
 		/*
 		 메서드를 호출할때는 함수의 원형을 그대로 기술하면 된다.
-		 매개변수가 있다면 개수만큼 포함한다. 매개변수의 개수가 다르거나
+		 매개변수가 있다면 갯수만큼 포함한다. 매개변수의 개수가 다르거나
 		 타입(형)이 맞지 않으면 에러가 발생한다.
 		 simpleFunc(1, 2, 3)과 같이 기술하면 해당 함수를 호출할 수 없으
 		 므로 에러가 발생한다.
 		 */
-		int result = simpleFunc(1, 2);
-		
+		int result = simpleFunc(1, 2);  // 실수여도 에러남.
 		System.out.println("1과2를 전달한 결과:"+result);
 		System.out.println("10과20을 전달한 결과:"+ simpleFunc(10, 20));
 		

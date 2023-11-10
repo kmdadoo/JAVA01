@@ -15,8 +15,8 @@ Java에서의 NamingRule(이름을 지을때의 규칙)
 	- 클래스명 : SimpleFunc => 대문자로 시작한는 Camel case로 작성한다.
 	- 메서드 혹은 변수명 : simpleFunc() 혹은 simpleFunc
 		=> 소문자로 시작하는 변형된 Camel case
-	- 상수명: SIMPLE_FUNC => 전체를 대문자로 기술한다. 단 열결단어는 
-		가독성을 위애 _(언더바)로 구분한다.
+	- 상수명: SIMPLE_FUNC => 전체를 대문자로 기술한다. 단 연결단어는 
+		가독성을 위해 _(언더바)로 구분한다.
 	- 패키지명 : simple.func => 전체를 소문자로 기술하고, 연결단어는
 		.(닷)으로 구분한다.
 		
@@ -34,7 +34,7 @@ public class E02MethodType01
 	}
 	
 	static void returnError() {
-		int returnValue = 11;
+		int returnValue = 12;
 		System.out.println("[Return문 이전]");
 		
 		
