@@ -20,7 +20,7 @@
 	.java로 지정하게 된다.
 	또한 public으로 선언된 클래스와 파일명은 반드시 일치해야 한다.
  */
-
+// test 입니다.
 package ex01start;
 
 import java.text.SimpleDateFormat;
